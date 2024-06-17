@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./components/CourseCard.scss";
+
+$primary-color: #6c63ff;
+$secondary-color: #ff6584;
+
+.header {
+    background-color: $primary-color;
+    .navbar {
+        .navbar-brand {
+            color: $primary-color;
+        }
+        .nav-link {
+            color: black;
+            
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.hero-section {
+    
+    
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+    }
+    .bonus-points, .course-access {
+        // margin-top: 20px;
+        p {
+            font-size: 1.2rem;
+        }
+        button {
+            margin-right: 10px;
+        }
+    }
+}
+
+.categories-section {
+    background-color: #fff;
+    padding: 30px 0;
+    .categories-carousel {
+        // Carousel styles here
+    }
+}
+
+.courses-section {
+    padding: 50px 0;
+    .filters {
+        // Filters styles here
+    }
+    .courses {
+        .course-card {
+            // Course card styles here
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.categorie-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+        
+        @media (max-width: 768px) {
+            display: none; /* Ocultar los botones en dispositivos móviles y tablets */
+        }
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .disabled {
+        display: none;
+    }
+}
+
+.categorie-carousel {
+    overflow-x: scroll;
+    overflow-y: hidden; /* Para asegurarse de que solo hay scroll horizontal */
+    display: flex;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none; /* Oculta la barra de scroll */
+    }
+
+    .categorie-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+}
+
+

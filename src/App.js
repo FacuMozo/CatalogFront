@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import CategoriesCarousel from './components/CategoriesCarousel';
+import CoursesSection from './components/CoursesSection';
+import Footer from './components/Footer';
+import mockCategories from './components/mockCategories';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.scss';
+
+const App = () => {
+    return (
+        <div className="App">
+            <Header />
+            <HeroSection />
+            <CategoriesCarousel categories={mockCategories}  />
+            <CoursesSection />
+            <Footer />
+        </div>
+    );
+};
 
 export default App;
