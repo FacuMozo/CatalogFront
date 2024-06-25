@@ -12,9 +12,10 @@ const SearchAndFilters = () => {
     return (
         <div className="search-and-filters d-lg-none">
             <div className="d-flex justify-content-between align-items-center mb-3">
-                <input type="text" className="form-control" placeholder="Search by courses" />
-                <button className="btn btn-primary ms-2" onClick={handleShow}>
-                    <i className="bi bi-filter"></i> Filters
+                <input type="text" className="form-control text-center p-2" placeholder=" 🔍 Search by courses" />
+                <button className="btn bg-white rounded-5 shadow ms-2" onClick={handleShow}>
+                    {/* <img src={settingsIcon} className='btnIcon' alt="" /> */}
+                    <i class="bi bi-sliders fs-4"></i>
                 </button>
             </div>
 

@@ -7,12 +7,14 @@ import Footer from './components/Footer';
 import mockCategories from './components/mockCategories';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 import './App.scss';
 
 const App = () => {
     return (
-        <div className="App">
+        <div className="App bg-light">
             <Header />
             <HeroSection />
             <CategoriesCarousel categories={mockCategories}  />
