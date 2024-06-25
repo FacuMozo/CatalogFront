@@ -6,7 +6,7 @@ import './HeroSection.scss'
 const HeroSection = () => {
     return (
         <section className="hero-section ">
-            <div className="container background-gradient p-5 rounded-4">
+            <div className="m-4 background-gradient p-5 rounded-4">
                 <div className="row g-4">
                     <div className="col-lg-4 order-lg-2 order-sm-1 col-md-12 d-flex justify-content-center">
                         <img src={learnimg} alt="Heroooo" className="img-fluid" />

@@ -10,11 +10,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
+
 import './App.scss';
 
 const App = () => {
     return (
-        <div className="App bg-light">
+        <div className="App ">
             <Header />
             <HeroSection />
             <CategoriesCarousel categories={mockCategories}  />

@@ -42,13 +42,13 @@ const CategorieCarousel = ({ categories }) => {
         : false;
 
     return (
-        <div className="categorie-carousel-wrapper">
+        <div className="categorie-carousel-wrapper ms-4">
             <button
                 className={`control prev ${isAtStart ? 'disabled' : ''}`}
                 onClick={handlePrevClick}
                 style={{ display: isAtStart ? 'none' : 'block' }}
             >
-                Prev
+                <i className="arrowIcon bi bi-arrow-left-circle-fill fs-1"></i>
             </button>
             <div className="categorie-carousel" ref={carouselRef}>
                 <div className="categorie-list">
@@ -63,7 +63,7 @@ const CategorieCarousel = ({ categories }) => {
                 aria-hidden="true"
                 // style={{ display: isAtEnd ? 'none' : 'block' }}
             >
-                Next
+                <i className="arrowIcon bi bi-arrow-right-circle-fill fs-1"></i>
             </button>
         </div>
     );

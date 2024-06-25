@@ -10,7 +10,7 @@ const CoursesSection = () => {
 
     return (
         <section className="courses-section">
-            <div className="container">
+            <div className="m-4">
                 <SearchAndFilters />
                 <div className="row">
                     <div className="col-lg-3 d-none d-lg-block">
@@ -19,7 +19,7 @@ const CoursesSection = () => {
                     <div className="col-lg-9">
                         <div className="courses row">
                             {mockCourses.map((course, index) => (
-                                <div className="col-12 col-sm-6 col-md-4 mb-4" key={index}>
+                                <div className="col-12 col-sm-6 col-md-6 col-xl-4 mb-4" key={index}>
                                     <CourseCard {...course} />
                                 </div>
                             ))}
