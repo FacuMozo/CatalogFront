@@ -1,0 +1,28 @@
+.interval-filter {
+    margin-bottom: 20px;
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    .interval-inputs {
+        display: flex;
+        justify-content: space-between;
+
+        .interval-input {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 5px;
+            }
+
+            input {
+                width: 100px;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        }
+    }
+}

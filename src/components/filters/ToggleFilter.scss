@@ -1,0 +1,30 @@
+.toggle-filter {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    .toggle-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .toggle-checkbox {
+        margin-left: auto;
+    }
+
+    .toggle-question {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    &.bg-blue {
+        background-color: rgba(173, 216, 230, 0.3);
+    }
+
+    &.bg-purple {
+        background-color: rgba(221, 160, 221, 0.3);
+    }
+}
