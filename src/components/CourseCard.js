@@ -17,10 +17,28 @@ const CourseCard = ({
     installmentPrice, 
     installmentPeriod 
 }) => {
+    //Carga dinamica de las imagenes, si no existe en la ruta especificada se muestra ALT
+    let logoSrc;
+    try {
+        logoSrc = require(`../images/${logo}.webp`);
+    } catch (error) {
+        // logoSrc = require('../images/default.jpg'); // Imagen por defecto
+        console.log("NO EXISTE EL LOGO");
+    }
+    let courseLogoSrc;
+    try {
+        courseLogoSrc = require(`../images/${courseImage}.webp`);
+    } catch (error) {
+        // logoSrc = require('../images/default.jpg'); // Imagen por defecto
+        console.log("NO EXISTE EL Course LOGO");
+    }
+
+
+
     return (
         <div className="course-card">
             <div className="card-header">
-                <img src={logo} alt="Provider Logo" className="provider-logo" />
+                <img src={logoSrc} alt={"Provider "+logo} className="provider-logo" />
                 <div className="course-category">
                     {courseCategory}
                 </div>
@@ -29,7 +47,7 @@ const CourseCard = ({
                 <div className="course-title-wrapper">
                     <h3 className="course-title">{title}</h3>
                     <div className="course-image">
-                        <img src={courseImage} alt="Course Image" />
+                        <img src={courseLogoSrc} alt="Course Image" />
                     </div>
                 </div>
                 <p className="course-hours">{hours} horas</p>
