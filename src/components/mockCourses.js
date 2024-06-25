@@ -1,8 +1,8 @@
 const mockCourses = [
     {
-        logo: '/path/to/geekbrains-logo.png',
+        logo: 'GeekBrains',
         courseCategory: 'Programación Web',
-        courseImage: '/path/to/metatags-image.png',
+        courseImage: 'CourseImg1',
         title: 'Utilización de Metatags',
         hours: '12',
         slots: '30',
@@ -15,9 +15,9 @@ const mockCourses = [
         installmentPeriod: '10'
     },
     {
-        logo: '/path/to/skillbox-logo.png',
+        logo: 'Skillbox',
         courseCategory: 'Programación Web',
-        courseImage: '/path/to/cypress-image.png',
+        courseImage: 'CourseImg2',
         title: 'Testing manual con Cypress',
         hours: '6',
         slots: '30',
@@ -30,9 +30,9 @@ const mockCourses = [
         installmentPeriod: '5'
     },
     {
-        logo: '/path/to/skillfactory-logo.png',
+        logo: 'SkillFactory',
         courseCategory: 'Experto en Data Science',
-        courseImage: '/path/to/data-scientist-image.png',
+        courseImage: 'CourseImg3',
         title: 'Introducción a Data Scientist',
         hours: '24',
         slots: '27',
@@ -45,9 +45,9 @@ const mockCourses = [
         installmentPeriod: '10'
     },
     {
-        logo: '/path/to/skillbox-logo.png',
+        logo: 'Skillbox',
         courseCategory: 'Programación Web',
-        courseImage: '/path/to/unitario-image.png',
+        courseImage: 'CourseImg2',
         title: 'Testing Unitario',
         hours: '5',
         slots: '50',
@@ -60,9 +60,9 @@ const mockCourses = [
         installmentPeriod: '5'
     },
     {
-        logo: '/path/to/eschool-logo.png',
+        logo: 'School',
         courseCategory: 'Testing Autónomo',
-        courseImage: '/path/to/soapui-image.png',
+        courseImage: 'CourseImg3',
         title: 'Testing Manual con SoapUI',
         hours: '6',
         slots: '30',
@@ -75,9 +75,9 @@ const mockCourses = [
         installmentPeriod: '5'
     },
     {
-        logo: '/path/to/geekbrains-logo.png',
+        logo: 'GeekBrainss',
         courseCategory: 'Marketing',
-        courseImage: '/path/to/marketing-image.png',
+        courseImage: 'CourseImg1',
         title: 'Digital-Marketing Inicial',
         hours: '10',
         slots: '30',
