@@ -1,0 +1,42 @@
+.gradient-text{
+    background: linear-gradient(90deg, #EE2C72, #4C07DF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-border-button {
+    position: relative;
+    padding: 10px 20px;
+    background: transparent;
+    color: #29004D; /* Fallback color */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+    border-radius: 5px; /* Adjust as needed */
+    display: inline-block;
+}
+
+.gradient-border-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #EE2C72, #4C07DF);
+    z-index: -1;
+    border-radius: 24px; /* Adjust as needed */
+}
+
+.gradient-border-button:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #fff; /* Button background color */
+    border-radius: 24px; /* Adjust as needed */
+    z-index: -1;
+}

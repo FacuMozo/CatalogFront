@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../images/lernalogo.webp'
+import './Header.scss'
 
 const Header = () => {
     return (
@@ -13,26 +14,24 @@ const Header = () => {
                         <img src={logo} alt="" height="35"/>
                     </a>
                     <form className="d-flex" role="search">
-                            <button className="btn btn-outline" type="submit">Search</button>
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            </input>
+                            <input type="text" className="form-control d-inline-flex  text-center px-5 bg-light rounded-5" placeholder=" 🔍 Search by courses and profesionals" />
                     </form>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Catalogue</a>
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 bg-light p-1 rounded-5 shadow-sm">
+                            <li className="nav-item rounded-5 bg-white">
+                                <a className="nav-link active rounded-4 shadow-sm" aria-current="page" href="#">Catalogue</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">NR Cabinet</a>
+                            <li className="nav-item bg-white rounded-4 shadow-sm ">
+                                <a className="nav-link " href="#">NR Cabinet</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item rounded-4 bg-white shadow-sm">
                                 <a className="nav-link" href="#">My training</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">250 points</a>
-                            </li>
                         </ul>
-                        
+                        <div className=' gradient-border-button'>
+
+                            <a className="nav-link  gradient-text" href="#">250 points</a>
+                        </div>
                     </div>
                 </div>
             </nav>
