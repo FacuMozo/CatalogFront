@@ -70,6 +70,9 @@ $secondary-color: #ff6584;
                 margin-right: 4px;
             }
         }
+        p{
+            color: #888;
+        }
         .course-pricing {
             p{
                font-family: 'Times New Roman', Times, serif;
@@ -79,6 +82,7 @@ $secondary-color: #ff6584;
                 color: #888;
             }
             .discounted-price {
+                color: black;
                 font-size: 1.2rem;
                 font-weight: 500;
             }

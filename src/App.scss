@@ -6,6 +6,9 @@ $secondary-color: #ff6584;
 
 .App{
     background-color: #e4e4e479    ;
+    h1,h2,h3,h4,h5,p,a,label{
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
 .header {
     background-color: $white;

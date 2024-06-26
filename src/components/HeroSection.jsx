@@ -4,6 +4,8 @@ import learnimg from '../images/learnaimg.png'
 import './HeroSection.scss'
 
 const HeroSection = () => {
+
+    const points=250
     return (
         <section className="hero-section ">
             <div className="m-4 background-gradient  rounded-4">
@@ -15,8 +17,8 @@ const HeroSection = () => {
                         <h1 className='row text-white text-md-center text-lg-left '>Online courses from trusted schools on one platform</h1>
                         <div className='row gy-2'>
                             <div className="col bonus-points text-white bg-opacity-75 rounded-3 p-3 HeroCard">
-                                <p>Your bonus account: </p>
-                                <p><strong>250 points</strong></p>
+                                <p className='fw-lighter'>Your bonus account: </p>
+                                <p className='fw-bold'>{points} points</p>
                                 <form className="email-form">
                                     <div className="row g-3 align-items-center">
                                         <div className="col-md-8">
