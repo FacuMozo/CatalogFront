@@ -14,6 +14,7 @@ const CategoryCard = ({ title, icon }) => {
             </div>
             <div className="category-icon">
                     <img src={require( `../images${icon}`)} alt="Imagen" />
+                    <i className={`categoryIcon ${icon}` } ></i>
             </div>
         </div>
     );

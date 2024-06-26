@@ -17,12 +17,12 @@ const Filters = ({ filters }) => {
             <div className="toggle-filters mb-3">
                 <ToggleFilter
                     label={filters.subscription.label}
-                    icon="subscription-icon.png" // Reemplazar con el icono real
+                    icon="bi-book-fill" // Reemplazar con el icono real
                     bgColor="bg-blue"
                 />
                 <ToggleFilter
                     label={filters.miniCourses.label}
-                    icon="mini-courses-icon.png" // Reemplazar con el icono real
+                    icon="bi-lightning-charge-fill" // Reemplazar con el icono real
                     bgColor="bg-purple"
                 />
             </div>
@@ -54,11 +54,13 @@ const Filters = ({ filters }) => {
             </div>
             <hr />
             <div className="filter-section mb-3">
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" id="free" />
-                    <label className="form-check-label" htmlFor="free">
+                <div className="row">
+                    <label className="col form-check-label" htmlFor="free">
                         {filters.free.label} ({filters.free.count})
                     </label>
+                    <div class="col-lg-2 col-md-1 m-0 form-check form-switch">
+                        <input type="checkbox" className="toggle-checkbox form-check-input " role="switch"/>
+                    </div>
                 </div>
             </div>
             <hr />

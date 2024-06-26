@@ -17,6 +17,7 @@
 
     &:hover {
         transform: translateY(-5px);
+        border-color: #6000B4;
     }
 
     .category-title {
@@ -37,6 +38,9 @@
         img {
             width: 100%;
             height: auto;
+        }
+        .categoryIcon{
+            color: #6000B4;
         }
     }
 }

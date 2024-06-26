@@ -1,7 +1,7 @@
 const mockCategories = [
     {
         title: 'All Categories',
-        icon: '/all-categories-icon.png'
+        icon: '/allCategories.png'
     },
     {
         title: 'Programación',
@@ -9,27 +9,27 @@ const mockCategories = [
     },
     {
         title: 'Marketing',
-        icon: '/marketing.png'
+        icon: '/whiteboard.png'
     },
     {
         title: 'Business Management',
-        icon: '/programming.png'
+        icon: '/businessManagement.png'
     },
     {
         title: 'Digital Design',
-        icon: '/programming.png'
+        icon: '/digitalDesign.png'
     },
     {
         title: 'Finance and Accounting',
-        icon: '/programming.png'
+        icon: '/walletIcon.png'
     },
     {
         title: 'Project and Products',
-        icon: '/programming.png'
+        icon: '/ideaIcon.png'
     },
     {
         title: 'Personal Management',
-        icon: '/programming.png'
+        icon: '/managementIcon.png'
     }
 ];
 

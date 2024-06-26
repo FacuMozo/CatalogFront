@@ -23,14 +23,14 @@ const CourseCard = ({
         logoSrc = require(`../images/${logo}.webp`);
     } catch (error) {
         // logoSrc = require('../images/default.jpg'); // Imagen por defecto
-        console.log("NO EXISTE EL LOGO");
+        console.log("No existe el Logo");
     }
     let courseLogoSrc;
     try {
         courseLogoSrc = require(`../images/${courseImage}.webp`);
     } catch (error) {
         // logoSrc = require('../images/default.jpg'); // Imagen por defecto
-        console.log("NO EXISTE EL Course LOGO");
+        console.log("No existe el logo del Course");
     }
 
 
@@ -59,13 +59,20 @@ const CourseCard = ({
                         <span className="extra-tag" key={index}>{tag}</span>
                     ))}
                 </div>
-                <div className="course-pricing">
-                    <p className="original-price">{originalPrice} $</p>
-                    <p className="discounted-price">{discountedPrice} $</p>
-                    <p className="installment-price">
-                        En {installmentPeriod} meses <br />
-                        {installmentPrice} $/mes
-                    </p>
+                <div className="row ms-1 course-pricing">
+                    <div className='col'>
+                        <p className="row original-price">{originalPrice} $</p>
+                        <p className="row discounted-price">{discountedPrice} $</p>
+
+                    </div>
+                    <div className='col'>
+                        <p className="row installment-price">
+                            En {installmentPeriod} meses <br />
+                        </p>
+                        <p className='row installmentPrice'>{installmentPrice} $/mes 
+                        </p>
+                    </div>
+
                 </div>
             </div>
             <div className="card-footer">

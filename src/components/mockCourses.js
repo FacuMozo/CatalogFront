@@ -75,7 +75,7 @@ const mockCourses = [
         installmentPeriod: '5'
     },
     {
-        logo: 'GeekBrainss',
+        logo: 'GeekBrains',
         courseCategory: 'Marketing',
         courseImage: 'CourseImg1',
         title: 'Digital-Marketing Inicial',

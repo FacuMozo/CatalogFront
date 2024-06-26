@@ -71,17 +71,24 @@ $secondary-color: #ff6584;
             }
         }
         .course-pricing {
+            p{
+               font-family: 'Times New Roman', Times, serif;
+            }
             .original-price {
                 text-decoration: line-through;
                 color: #888;
             }
             .discounted-price {
                 font-size: 1.2rem;
-                font-weight: bold;
-                color: #6c63ff;
+                font-weight: 500;
             }
             .installment-price {
                 color: #444;
+            }
+            .installmentPrice{
+                color: black;
+                font-size: larger;
+                font-weight: 700;
             }
         }
     }
