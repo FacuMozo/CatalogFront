@@ -11,11 +11,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 import './App.scss';
+import NavLinksMobile from './components/NavLinksMobile';
 
 const App = () => {
     return (
         <div className="App ">
             <Header />
+            <NavLinksMobile />
             <HeroSection />
             <CategoriesCarousel categories={mockCategories}  />
             <CoursesSection />

@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './Button';
 import learnimg from '../images/learnaimg.png'
 import './HeroSection.scss'
+import skillbox from '../images/SkillboxWhite.png'
 
 const HeroSection = () => {
 
@@ -17,8 +18,16 @@ const HeroSection = () => {
                         <h1 className='row text-white text-center text-lg-start text-wrap '>Online courses from trusted schools on one platform</h1>
                         <div className='row gy-2'>
                             <div className="col-md bonus-points text-white bg-opacity-75 rounded-3 p-3 HeroCard">
-                                <p className='fw-lighter'>Your bonus account: </p>
-                                <p className='fw-bold'>{points} points</p>
+                                <div className='row'>
+                                    <div className='col'>
+                                        <p className='fw-lighter fs-6'>Your bonus account: </p>
+                                    </div>
+                                    <div className='col text-end'>
+                                        <p className='fw-lighter fs-6 fst-normal'>1 point = 1 US$</p>
+                                    </div>
+
+                                </div>
+                                <p className='fw-semibold'>{points} points</p>
                                 <form className="email-form">
                                     <div className="row g-3 align-items-end">
                                         <div className="col col-xl-7">
@@ -27,16 +36,20 @@ const HeroSection = () => {
                                                 type="email"  
                                                 maxLength="64" 
                                                 required 
-                                                pattern=".+@+.+\.com"
+                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$"
                                                 placeholder="Ingrese e-mail" 
                                             />
                                         </div>
-                                        <div className="col-2 col-lg-5 border rounded-3 text-center ">
+                                        <div className="col-2 col-lg-5 p-0 text-center align-middle">
+                                                <button className="col-12 btn btn-outline-info  p-0 align-middle">
+                                                    <i className="col-lg-4 px-0 bi bi-info fs-4 text-lg-end"></i>
+                                                    <span className='d-none d-xl-inline-block'>Aceptar</span>
+                                                </button>
                                             <div className='row px-0 mx-0 text-center'>
-                                                <i className="col-lg-4 px-0 bi bi-info fs-4 text-lg-end"></i>
-                                                <div className='col-7 px-0 d-none d-lg-block text-start'>
-                                                    <Button  text="Aceptar" btnClass="btn-secondary" textColor="text-white" />
-                                                </div>
+
+                                                {/* <div className='col-8 px-0 d-none d-lg-block text-start'>
+                                                    <Button  text="i aceptar" btnClass="btn-outline-info" textColor="text-white" />
+                                                </div> */}
                                             </div>
                                         </div>
                                     </div>
@@ -45,7 +58,15 @@ const HeroSection = () => {
                                 
                             </div>
                             <div className="col-md HeroCard course-access rounded-3 p-3 mx-md-2 HeroCard">
-                                <p className='text-white fs-6 fw-light'>You have access to the course:</p>
+                                <div className='row'>
+                                    <div className='col'>
+                                        <p className='text-white fs-6 fw-light'>You have access to the course:</p>
+                                    </div>
+                                    <div className='col text-end d-none d-xl-block'>
+                                        <img src={skillbox} alt="Skillbox" style={{maxWidth:"64px"}} />
+                                    </div>
+
+                                </div>
                                 <p className='text-white'>Management and continuous improvement</p>
                                 <div className='row'>
                                     <div className='col-8 col-md-7'>
@@ -58,7 +79,7 @@ const HeroSection = () => {
                                         <div className='d-none d-md-block d-xl-none'>
                                             <Button  text="More 4" btnClass="btn-secondary" textColor="text-white" />
                                         </div>
-                                        <div className='d-sm-block d-md-none'>
+                                        <div className='d-sm-block d-md-none text-center'>
                                             <Button  text="More" btnClass="btn-secondary" textColor="text-white" />
                                         </div>
                                     </div>
