@@ -16,7 +16,7 @@ const ToggleFilter = ({ label, icon, bgColor }) => {
                 <i className="col-1 bi bi-info-circle"></i>
             </div>
             <div className='col-lg-2 p-1 col-md-1'>
-                <div class="m-0 form-check form-switch">
+                <div className="m-0 form-check form-switch">
                     <input type="checkbox" className="toggle-checkbox form-check-input " role="switch"/>
                 </div>
             </div>

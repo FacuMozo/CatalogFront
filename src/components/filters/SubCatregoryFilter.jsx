@@ -41,7 +41,7 @@ SubcategoryFilter.propTypes = {
     title: PropTypes.string.isRequired,
     options: PropTypes.arrayOf(
         PropTypes.shape({
-            name: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
             count: PropTypes.number.isRequired,
         })
     ).isRequired,

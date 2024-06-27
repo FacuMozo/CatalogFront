@@ -4,7 +4,7 @@ import learnimg from '../images/learnaimg.png'
 import './HeroSection.scss'
 import skillbox from '../images/SkillboxWhite.png'
 
-const HeroSection = () => {
+const HeroSection = ({cantCourses}) => {
 
     const points=250
     return (
@@ -14,10 +14,10 @@ const HeroSection = () => {
                     <div className="col-lg-4  order-lg-2 order-sm-1 col-md-12 d-flex justify-content-center">
                         <img src={learnimg} alt="CoursesImg" className="imgBanner img-fluid" />
                     </div>
-                    <div className="col-lg-8 col-md-12 order-lg-1 order-sm-2 gy-5">
+                    <div className="d-flex flex-column justify-content-between col-lg-8 col-md-12 order-lg-1 order-sm-2 gy-5">
                         <h1 className='row text-white text-center text-lg-start text-wrap '>Online courses from trusted schools on one platform</h1>
-                        <div className='row gy-2'>
-                            <div className="col-md bonus-points text-white bg-opacity-75 rounded-3 p-3 HeroCard">
+                        <div className='row gy-2 mb-4'>
+                            <div className="d-flex flex-column justify-content-between col-md bonus-points text-white bg-opacity-75 rounded-3 p-3 HeroCard">
                                 <div className='row'>
                                     <div className='col'>
                                         <p className='fw-lighter fs-6'>Your bonus account: </p>
@@ -27,33 +27,37 @@ const HeroSection = () => {
                                     </div>
 
                                 </div>
-                                <p className='fw-semibold'>{points} points</p>
-                                <form className="email-form">
-                                    <div className="row g-3 align-items-end">
-                                        <div className="col col-xl-7">
-                                            <input 
-                                                className="form-control"
-                                                type="email"  
-                                                maxLength="64" 
-                                                required 
-                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$"
-                                                placeholder="Ingrese e-mail" 
-                                            />
-                                        </div>
-                                        <div className="col-2 col-lg-5 p-0 text-center align-middle">
-                                                <button className="col-12 btn btn-outline-info  p-0 align-middle">
-                                                    <i className="col-lg-4 px-0 bi bi-info fs-4 text-lg-end"></i>
-                                                    <span className='d-none d-xl-inline-block'>Aceptar</span>
-                                                </button>
-                                            <div className='row px-0 mx-0 text-center'>
+                                <div className='row'>
+                                    <p className='fw-semibold'>{points} points</p>
+                                </div>
+                                <div className='row'>
+                                    <form className="email-form">
+                                        <div className="row g-3 align-items-end">
+                                            <div className="col col-xl-7">
+                                                <input 
+                                                    className="form-control"
+                                                    type="email"  
+                                                    maxLength="64" 
+                                                    required 
+                                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$"
+                                                    placeholder="Ingrese e-mail" 
+                                                />
+                                            </div>
+                                            <div className="col-2 col-lg-5 p-0 text-center align-middle">
+                                                    <button className="col-12 btn btn-outline-info  p-0 align-middle">
+                                                        <i className="col-lg-4 px-0 bi bi-info fs-4 text-lg-end"></i>
+                                                        <span className='d-none d-xl-inline-block'>Aceptar</span>
+                                                    </button>
+                                                <div className='row px-0 mx-0 text-center'>
 
-                                                {/* <div className='col-8 px-0 d-none d-lg-block text-start'>
-                                                    <Button  text="i aceptar" btnClass="btn-outline-info" textColor="text-white" />
-                                                </div> */}
+                                                    {/* <div className='col-8 px-0 d-none d-lg-block text-start'>
+                                                        <Button  text="i aceptar" btnClass="btn-outline-info" textColor="text-white" />
+                                                    </div> */}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
 
                                 
                             </div>
@@ -74,7 +78,7 @@ const HeroSection = () => {
                                     </div>
                                     <div className="col-4 col-md-5 border rounded-3 text-sm-center">
                                         <div className='d-none d-xl-block '>
-                                            <Button  text="My training 4" btnClass="btn-secondary" textColor="text-white"/>
+                                            <Button  text={`My training ${cantCourses}`} btnClass="btn-secondary" textColor="text-white"/>
                                         </div>
                                         <div className='d-none d-md-block d-xl-none'>
                                             <Button  text="More 4" btnClass="btn-secondary" textColor="text-white" />

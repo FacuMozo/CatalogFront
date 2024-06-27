@@ -14,10 +14,10 @@ const CoursesSection = () => {
                 <SearchAndFilters />
                 <h2>Total courses {cantCourses}</h2>
                 <div className="row">
-                    <div className="col-lg-2 d-none d-lg-block">
+                    <div className="col-lg-2 d-none d-xl-block">
                         <Filters filters={mockFilters} />
                     </div>
-                    <div className="col-lg-10">
+                    <div className="col-xl-10">
                         <div className="courses row">
                             {mockCourses.map((course, index) => (
                                 <div className="col-12 col-sm-6 col-md-6 col-xl-4 mb-4" key={index}>

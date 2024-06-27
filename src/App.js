@@ -14,11 +14,13 @@ import './App.scss';
 import NavLinksMobile from './components/NavLinksMobile';
 
 const App = () => {
+
+    const cantCourses = 4;
     return (
         <div className="App ">
-            <Header />
+            <Header cantCourses={cantCourses}/>
             <NavLinksMobile />
-            <HeroSection />
+            <HeroSection cantCourses={cantCourses}/>
             <CategoriesCarousel categories={mockCategories}  />
             <CoursesSection />
             

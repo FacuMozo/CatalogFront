@@ -58,7 +58,7 @@ const Filters = ({ filters }) => {
                     <label className="col form-check-label" htmlFor="free">
                         {filters.free.label} ({filters.free.count})
                     </label>
-                    <div class="col-lg-2 col-md-1 m-0 form-check form-switch">
+                    <div className="col-lg-2 col-md-1 m-0 form-check form-switch">
                         <input type="checkbox" className="toggle-checkbox form-check-input " role="switch"/>
                     </div>
                 </div>
