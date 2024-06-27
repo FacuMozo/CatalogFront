@@ -15,9 +15,14 @@ const Header = () => {
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="" height="35"/>
                     </a>
-                    <form className="d-flex" role="search">
-                            <input type="text" size="54" className="form-control d-inline-flex text-center bg-light rounded-5" placeholder=" 🔍 Search by courses and profesionals" />
-                    </form>
+                    <div className='d-none d-lg-block'>
+                        <form className="d-flex" role="search">
+                                <input type="text" size="54" className="form-control d-inline-flex text-center bg-light rounded-5" placeholder=" 🔍 Search by courses and professions" />
+                        </form>
+
+                    </div>
+                    <i className="d-lg-none bi bi-question-circle mx-4 fw-bold fs-4"></i>
+
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 bg-light p-1 rounded-5 shadow-sm">
                             <li className="nav-item rounded-5 bg-white">
@@ -30,6 +35,7 @@ const Header = () => {
                                 <a className="nav-link" href="#">My training</a>
                             </li>
                         </ul>
+                        <i className="d-none d-lg-block bi bi-question-circle mx-4 fw-bold"></i>
                         <div className='row align-items-center gradient-border-button gx-1 gy-0'>
                             <div className='col'>
                                 <a className="nav-link text-nowrap" href="#">250 points</a>
@@ -39,6 +45,8 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </nav>
         </header>

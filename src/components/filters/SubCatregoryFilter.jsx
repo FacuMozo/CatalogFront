@@ -23,7 +23,7 @@ const SubcategoryFilter = ({ title, options }) => {
                 {showAll && options.slice(4).map((option, index) => (
                     <li key={index + 4}>
                         <label>
-                            <input type="checkbox" /> {option.name} ({option.count})
+                            <input className="form-check-input mx-2" type="checkbox" /> {option.label} ({option.count})
                         </label>
                     </li>
                 ))}

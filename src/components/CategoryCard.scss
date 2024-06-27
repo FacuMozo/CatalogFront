@@ -10,8 +10,8 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
-    height: 10rem; /* Altura fija para todas las CategoryCard */
-    width: 13rem; /* Ancho fijo para todas las CategoryCard */
+    height: 120px; /* Altura fija para todas las CategoryCard */
+    width: 210px; /* Ancho fijo para todas las CategoryCard */
     overflow: hidden; /* Para manejar el contenido que se desborde */
     position: relative;
 
@@ -19,12 +19,8 @@
         transform: translateY(-5px);
         border-color: #6000B4;
     }
-
-    .category-title {
-        font-size: 1rem;
-        font-weight: bold;
-        margin-bottom: 12px;
-        
+    h5{
+        font-size: 15px;
     }
 
     .category-icon {

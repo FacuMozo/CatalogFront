@@ -10,7 +10,9 @@ const CategoryCard = ({ title, icon }) => {
     return (
         <div className={`category-card ${title === 'All categories' ? 'all-categories' : ''}`}>
             <div className="category-title">
-                {title}
+                <h5>
+                    {title}
+                </h5>
             </div>
             <div className="category-icon">
                     <img src={require( `../images${icon}`)} alt="Imagen" />
