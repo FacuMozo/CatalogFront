@@ -2,7 +2,7 @@ const mockCourses = [
     {
         logo: 'GeekBrains',
         courseCategory: 'Programación Web',
-        courseImage: 'CourseImg1',
+        courseImage: 'CourseImg1.webp',
         title: 'Utilización de Metatags',
         hours: '12',
         slots: '30',
@@ -17,7 +17,7 @@ const mockCourses = [
     {
         logo: 'Skillbox',
         courseCategory: 'Programación Web',
-        courseImage: 'CourseImg2',
+        courseImage: 'CourseImg2.webp',
         title: 'Testing manual con Cypress',
         hours: '6',
         slots: '30',
@@ -32,7 +32,7 @@ const mockCourses = [
     {
         logo: 'SkillFactory',
         courseCategory: 'Experto en Data Science',
-        courseImage: 'CourseImg3',
+        courseImage: 'CourseImg3.webp',
         title: 'Introducción a Data Scientist',
         hours: '24',
         slots: '27',
@@ -47,7 +47,7 @@ const mockCourses = [
     {
         logo: 'Skillbox',
         courseCategory: 'Programación Web',
-        courseImage: 'CourseImg2',
+        courseImage: 'CourseImg4.png',
         title: 'Testing Unitario',
         hours: '5',
         slots: '50',
@@ -62,7 +62,7 @@ const mockCourses = [
     {
         logo: 'School',
         courseCategory: 'Testing Autónomo',
-        courseImage: 'CourseImg3',
+        courseImage: 'CourseImg5.png',
         title: 'Testing Manual con SoapUI',
         hours: '6',
         slots: '30',
@@ -77,7 +77,7 @@ const mockCourses = [
     {
         logo: 'GeekBrains',
         courseCategory: 'Marketing',
-        courseImage: 'CourseImg1',
+        courseImage: 'CourseImg6.png',
         title: 'Digital-Marketing Inicial',
         hours: '10',
         slots: '30',

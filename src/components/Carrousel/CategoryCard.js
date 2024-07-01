@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './CategoryCard.scss';
-import ImageComponent from './Image.js';
+
 
 
 const CategoryCard = ({ title, icon }) => {
-    
+    let iconSrc;
+    try {
+        iconSrc = require(`../../images/icons/${icon}`);
+    } catch (error) {
+        // logoSrc = require('../images/default.jpg'); // Imagen por defecto
+        console.log("No existe el icono");
+    }
 
     return (
         <div className={`category-card ${title === 'All categories' ? 'all-categories' : ''}`}>
@@ -15,7 +21,7 @@ const CategoryCard = ({ title, icon }) => {
                 </h5>
             </div>
             <div className="category-icon">
-                    <img src={require( `../images${icon}`)} alt="Imagen" />
+                    <img src={iconSrc} alt="Imagen" />
                     <i className={`categoryIcon ${icon}` } ></i>
             </div>
         </div>

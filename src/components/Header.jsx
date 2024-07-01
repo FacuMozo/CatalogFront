@@ -15,7 +15,7 @@ const Header = ({cantCourses}) => {
                     </button>
 
                     {/*  Logo  */}
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand ms-xl-4" href="#">
                         <img src={logo} alt="" height="35"/>
                     </a>
                     {/*  SearchBar  */}

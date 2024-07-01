@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Filters from './Filters';
-import mockFilters from './mockFilters';
+import mockFilters from '../mockFilters';
 import './SearchAndFilters.scss'; // Asegúrate de agregar tus estilos personalizados aquí
 
 const SearchAndFilters = () => {

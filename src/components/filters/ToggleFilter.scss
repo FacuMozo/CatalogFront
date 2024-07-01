@@ -1,14 +1,20 @@
 .toggle-filter {
     display: flex;
     align-items: center;
-    padding: 10px;
+    column-gap: 0px;
+    padding: 12px;
     border-radius: 5px;
     margin-bottom: 10px;
 
     .toggle-icon {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+        margin-right: 4px;
+    }
+    .toggle-info-icon {
+        width: 13px;
+        height: 13px;
+        margin-right: 4px;
     }
 
     .toggle-checkbox {
@@ -27,4 +33,5 @@
     &.bg-purple {
         background-color: rgba(113, 58, 224, 0.1);
     }
+    
 }

@@ -1,35 +1,35 @@
 const mockCategories = [
     {
         title: 'All Categories',
-        icon: '/allCategories.png'
+        icon: 'Border-all.png'
     },
     {
         title: 'Programación',
-        icon: '/programming.png'
+        icon: 'Programming.png'
     },
     {
         title: 'Marketing',
-        icon: '/whiteboard.png'
+        icon: 'Marketing.png'
     },
     {
         title: 'Business Management',
-        icon: '/businessManagement.png'
+        icon: 'B2B.png'
     },
     {
         title: 'Digital Design',
-        icon: '/digitalDesign.png'
+        icon: 'Design-ux.png'
     },
     {
         title: 'Finance and Accounting',
-        icon: '/walletIcon.png'
+        icon: 'Finance.png'
     },
     {
         title: 'Project and Products',
-        icon: '/ideaIcon.png'
+        icon: 'Product.png'
     },
     {
         title: 'Personal Management',
-        icon: '/managementIcon.png'
+        icon: 'Connected-people.png'
     }
 ];
 

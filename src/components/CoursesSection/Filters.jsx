@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import ToggleFilter from './filters/ToggleFilter';
-import SubcategoryFilter from './filters/SubCatregoryFilter';
-import IntervalFilter from './filters/IntervalFilter';
+import ToggleFilter from '../filters/ToggleFilter';
+import SubcategoryFilter from '../filters/SubCatregoryFilter';
+import IntervalFilter from '../filters/IntervalFilter';
 import './Filters.scss';
 
 const Filters = ({ filters }) => {
@@ -17,12 +17,12 @@ const Filters = ({ filters }) => {
             <div className="toggle-filters mb-3">
                 <ToggleFilter
                     label={filters.subscription.label}
-                    icon="bi-book-fill" // Reemplazar con el icono real
+                    icon="Library" // Reemplazar con el icono real
                     bgColor="bg-blue"
                 />
                 <ToggleFilter
                     label={filters.miniCourses.label}
-                    icon="bi-lightning-charge-fill" // Reemplazar con el icono real
+                    icon="Card" // Reemplazar con el icono real
                     bgColor="bg-purple"
                 />
             </div>

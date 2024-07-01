@@ -1,12 +1,12 @@
 @import "./customTheme.scss";
-@import "./components/CourseCard.scss";
+@import "./components/CoursesSection/CourseCard.scss";
 
 $primary-color: #6c63ff;
 $secondary-color: #ff6584;
 
 .App{
     background-color: #e4e4e479    ;
-    h1,h2,h3,h4,h5,p,a,label,button{
+    h1,h2,h3,h4,h5,p,a,label,button,span{
         font-family: "Adamina", serif;
         font-weight: 400;
         font-style: normal;

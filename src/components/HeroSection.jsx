@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 import learnimg from '../images/learnaimg.png'
 import './HeroSection.scss'
-import skillbox from '../images/SkillboxWhite.png'
+import skillbox from '../images/providers/SkillboxWhite.png'
 
 const HeroSection = ({cantCourses}) => {
 
@@ -76,15 +76,27 @@ const HeroSection = ({cantCourses}) => {
                                     <div className='col-8 col-md-7'>
                                         <Button text="Go to training" btnClass="btn-info" col="col-12" textWheight="fw-semibold"/>
                                     </div>
-                                    <div className="col-4 col-md-5 border rounded-3 text-sm-center">
+                                    <div className="col-4 col-md-5  text-sm-center">
                                         <div className='d-none d-xl-block '>
-                                            <Button  text={`My training ${cantCourses}`} btnClass="btn-secondary" textColor="text-white"/>
+                                            {/* <Button  text={`My training ${cantCourses}`} btnClass="btn-secondary" textColor="text-white"/> */}
+                                            <button className="col-12 btn btn-outline-info  p-0 align-middle">
+                                                <i className="col-lg-4 px-0 bi bi-info fs-4 text-lg-end"></i>
+                                                <span className='d-none d-xl-inline-block'>My training {cantCourses}</span>
+                                            </button>
                                         </div>
                                         <div className='d-none d-md-block d-xl-none'>
-                                            <Button  text="More 4" btnClass="btn-secondary" textColor="text-white" />
+                                            {/* <Button  text="More 4" btnClass="btn-secondary" textColor="text-white" /> */}
+                                            <button className="col-12 btn btn-outline-info  p-0 align-middle">
+                                                <i className="col-lg-4 px-0 bi bi-info fs-4 text-lg-end"></i>
+                                                <span className='d-none d-xl-inline-block'>More {cantCourses}</span>
+                                            </button>
                                         </div>
                                         <div className='d-sm-block d-md-none text-center'>
-                                            <Button  text="More" btnClass="btn-secondary" textColor="text-white" />
+                                            <button className="col-12 btn btn-outline-info  p-0 align-middle">
+                                                <i className="col-lg-4 px-0 bi bi-info fs-4 text-lg-end"></i>
+                                                <span className='d-none d-xl-inline-block'>More</span>
+                                            </button>
+                                            {/* <Button  text="More" btnClass="btn-secondary" textColor="text-white" /> */}
                                         </div>
                                     </div>
                                 </div>
