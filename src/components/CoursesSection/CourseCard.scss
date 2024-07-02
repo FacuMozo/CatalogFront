@@ -3,15 +3,19 @@ $secondary-color: #ff6584;
 .course-category {
     background-color: #713AE01A ;
     color: $primary-color;
-    border-radius: 16px;
+    border-radius: 0 16px 0 16px;
     padding: 4px 0;
     font-size: 0.85rem;
     font-weight: 600;
 }
+
+.course-card-body {
+    padding: 0 20px 20px 20px;
+
+}
 .course-card {
     border: 1px solid #e0e0e0;
     border-radius: 16px;
-    padding: 0 20px 20px 20px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
