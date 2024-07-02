@@ -47,17 +47,17 @@ const CourseCard = ({
 
             <div className="card-body">
                 <div className="course-title-wrapper">
-                    <div className='container'>
-                        <div className='row'>
+                    <div className='container p-0'>
+                        <div className='row row-container g-0'>
                             <div className='col-8 px-0'>
                                 <img src={logoSrc} alt={"Provider "+logo} className="provider-logo" />
-                                <h3 className="course-title">{title}</h3>
+                                <h3 className="course-title m-0">{title}</h3>
                                 <p className="course-hours">{hours} horas</p>
                                 {slots && <p className="course-slots">Cupo: {slots} plazas</p>}
                                 {rating && <p className="course-rating">Rat.: {rating} estrellas</p>}
 
                             </div>
-                            <div className='col-4 pt-3 text-end'>
+                            <div className='col-4 pt-3 px-0 text-end'>
                                 <div className="course-image">
                                     <img src={courseLogoSrc} alt="Course Image" />
                                 </div>

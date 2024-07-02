@@ -11,7 +11,7 @@ $secondary-color: #ff6584;
 .course-card {
     border: 1px solid #e0e0e0;
     border-radius: 16px;
-    
+    padding: 0 20px 20px 20px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -26,15 +26,15 @@ $secondary-color: #ff6584;
     }
     
     .card-body {
-        padding: 0 16px 0 16px;
+        padding: 0;
         .course-title-wrapper {
             display: flex; /* Alinea el título y la imagen del curso en la misma fila */
             align-items: flex-start; /* Alinea los elementos al inicio */
             .course-title {
-                font-size: 1.2rem;
-                font-weight: bold;
+                font-size: 22px;
+                font-weight: 300;
                 margin-top: 0;
-                margin-right: 16px; /* Espacio entre el título y la imagen del curso */
+                 /* Espacio entre el título y la imagen del curso */
                 flex: 1; /* El título ocupa el espacio restante */
                 word-wrap: break-word; /* Hace que el texto haga wrap */
             }
@@ -97,7 +97,7 @@ $secondary-color: #ff6584;
         }
     }
     .card-footer {
-        padding: 0 16px 16px 16px;
+        padding: 0 ;
         display: flex;
         // gap: 4px;
         justify-content: space-between;
